@@ -3,8 +3,10 @@ body {
   color: #ef476f;
   font-family: 'Arial';
   text-align: left;
-  padding-top: 30px;
-  background-color: #d8e4ff;
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 5%;
 }
 
 p {
