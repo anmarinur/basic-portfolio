@@ -1,6 +1,12 @@
 body {
-  font-size: 40px;
+  font-size: 60px;
   color: #ef476f;
   font-family: 'Arial';
-  text-align: center;
+  text-align: left;
+  padding-top: 30px;
+  background-color: #d8e4ff;
+}
+
+p {
+  color: #0a369d;
 }
