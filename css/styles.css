@@ -1,8 +1,8 @@
 :root {
   --blanco: #ffffff;
   --oscuro: #212121;
-  --primario: #ffc107;
-  --secundario: #0097a7;
+  --primario: #fff07c;
+  --secundario: #3f84e5;
   --gris: #757575;
 }
 
@@ -25,10 +25,17 @@ body {
 }
 
 .navegacion-principal {
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .nav-bg {
@@ -41,6 +48,8 @@ body {
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem;
+  display: block;
+  text-align: center;
 }
 
 .navegacion-principal a:hover {
