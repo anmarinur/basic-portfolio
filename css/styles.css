@@ -4,11 +4,11 @@
   --primario: #fff07c;
   --secundario: #3f84e5;
   --gris: #757575;
+  --grisClaro: #dfe9f3;
 }
 
 html {
   font-size: 62.5%;
-  font-family: 'Krub', sans-serif;
   box-sizing: border-box;
 }
 
@@ -18,6 +18,8 @@ html {
 
 body {
   font-size: 16px; /* 1rem = 10px*/
+  font-family: 'Krub', sans-serif;
+  background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
 }
 
 h1 {
@@ -56,18 +58,30 @@ h1, h2, h3 {
     }
 }
 
+.sombra {
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(89,89,89,0.54);
+  -moz-box-shadow: 0px 7px 15px 0px rgba(89,89,89,0.54);
+  box-shadow: 0px 7px 15px 0px rgba(89,89,89,0.54);
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
 .titulo span {
   font-size: 2rem;
 }
 
 .navegacion-principal {
-  max-width: 120rem;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
-@media (min-width: 480px) {
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
   .navegacion-principal {
     flex-direction: row;
     justify-content: space-between;
@@ -79,7 +93,7 @@ h1, h2, h3 {
 }
 
 .navegacion-principal a {
-  color: white;
+  color: var(--blanco);
   text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
@@ -99,6 +113,7 @@ h1, h2, h3 {
   background-size: cover;
   height: 45rem;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .contenido-hero {
