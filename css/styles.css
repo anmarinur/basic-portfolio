@@ -36,6 +36,26 @@ h1, h2, h3 {
   text-align: center;
 }
 
+.boton {
+  background-color: var(--secundario);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+    .boton {
+      width: auto;
+    }
+}
+
 .titulo span {
   font-size: 2rem;
 }
@@ -102,3 +122,4 @@ h1, h2, h3 {
   display: flex;
   align-items: flex-end;
 }
+
