@@ -99,41 +99,45 @@
       </section>
     </div>
 
-  </main>
-  
-  <section>
     <h2>Contacto</h2>
-    <form action="">
-      <fieldset>
-        <legend>Contáctame llenando todos los campos</legend>
-
-        <div>
-          <label>Nombre</label>
-          <input type="text" placeholder="Tu nombre">
+    <section class="formulario">
+      
+      <form action="">
+        <fieldset>
+          <legend>Contáctame llenando todos los campos</legend>
+          
+          <div class="contenedor-campos">
+            <div class="campo">
+              <label>Nombre</label>
+              <input class="input-text" type="text" placeholder="Tu nombre">
+            </div>
+            
+            <div class="campo">
+              <label>Teléfono</label>
+              <input class="input-text" type="tel" placeholder="Tu teléfono">
+            </div>
+            
+            <div class="campo">
+              <label>Correo</label>
+              <input class="input-text" type="email" placeholder="Tu correo">
+            </div>
+            
+            <div class="campo">
+              <label>Mensaje</label>
+              <textarea class="input-text"></textarea>
+            </div>
         </div>
-        
-        <div>
-          <label>Teléfono</label>
-          <input type="tel" placeholder="Tu teléfono">
+          
+        <div class="flex alinear-derecha">
+          <input class="boton w-sm-100" type="submit" value="Enviar">
         </div>
-        
-        <div>
-          <label>Correo</label>
-          <input type="email" placeholder="Tu correo">
-        </div>
-        
-        <div>
-          <label>Mensaje</label>
-          <textarea></textarea>
-        </div>
-        
-        <input type="submit" value="Enviar">
-      </fieldset>
-    </form>
-  </section>
-
-  <footer>
-    <p>Todos los derechos reservados. Anderson marín Freelancer. 2023</p>
+        </fieldset>
+      </form>
+    </section>
+    
+  </main>
+  <footer class="footer">
+    <p>Todos los derechos reservados. Anderson Marín Freelancer. 2023</p>
   </footer>
 </body>
 </html>
